@@ -7,6 +7,10 @@ h1, h2 {
 h2 {
   margin-top: 2em;
 }
+.subtitle {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 .main {
 }
 td.time {
