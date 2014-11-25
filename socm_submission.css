@@ -1,0 +1,105 @@
+body {
+  margin: 30px;
+  max-width: 900px;
+  font-size: 1.1em;
+}         
+
+.title { 
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.1em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.authors { 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.authors ul {
+  padding: 0px; 
+}
+.authors li {
+  display: block-inline;
+  list-style-type: none;
+}
+.authors .people {
+  font-size: 1.3em;  
+}
+.authors .affiliations {
+  margin-top: 10px;
+  font-size: 1em;  
+}
+.authors .emails {
+  margin-top: 10px;
+  font-size: 1em;  
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.2em;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 1em;  
+  padding-top: 5px;
+}
+.figure {
+  clear: both;
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+.figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: top;
+  text-align: center;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+table .left {
+  text-align: left;
+}
+table .right {
+  text-align: right;
+}
+table .nowrap {
+  white-space: nowrap;
+}
+tbody {
+  border-top: 1px solid #000; 
+  border-bottom: 1px solid #000; 
+}
+tr, th, td {
+  padding: 5px;
+}
+caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 1em;  
+  padding-top: 5px;
+}
+
+ul, ol {
+  margin: 0px;
+}

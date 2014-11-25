@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-sc"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:schema="http://schema.org/"
+
+  xml:lang="en">
+  
+  <head>
+    <title>SOCM2015 html submission template</title>
+    <link rel="stylesheet" type="text/css" media="all" href="socm_submission.css"/>
+    <!-- <link rel="stylesheet" type="text/css" media="print" href="http://linked-research.270a.info/lncs.css"/> -->
+    <link rel="stylesheet" type="text/css" media="print" href="http://linked-research.270a.info/acm.css"/>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="main entry">
+        <div>
+        <h1 class="entry-title">SOCM2015 html submission template</h1>
+
+        <div id="authors" class="authors">
+          <ul class="people">
+            <li id="author_1" class="entry-author"><a href="http://csarven.ca/#i" class="author_name">Sarven Capadisli</a><sup><a href="#author_org_1">1</a></sup>&nbsp;<sup><a href="#author_org_2">2</a></sup>&nbsp;<sup><a href="#author_email_1">&#x270A;</a></sup></li>
+            <li id="author_2" class="entry-author author_corresponding"><a href="http://aprilush.ro" class="author_name">Laura Dr&#259;gan</a><sup><a href="#author_org_3">3</a></sup>&nbsp;<sup><a href="#author_email_2">@</a></sup></li>
+          </ul>
+
+          <ul id="author_orgs" class="affiliations">
+            <li id="author_org_1"><sup>1</sup><a href="http://bfh.ch/">Bern University of Applied Sciences</a>, E-Government-Institute, Bern, Switzerland</li>
+            <li id="author_org_2"><sup>2</sup><a href="http://uni-bonn.de/">University of Bonn</a>, Enterprise Information Systems Department, Bonn, Germany</li>
+            <li id="author_org_3"><sup>3</sup><a href="http://ecs.soton.ac.uk">Electronics and Computer Science Department (ECS)</a>, <a href="http://southampton.ac.uk/">University of Southampton</a>, Southampton, UK</li>
+          </ul>
+
+          <ul id="author_emails" class="emails">
+            <li id="author_email_1"><sup>&#x270A;</sup><a href="mailto:info@csarven.ca" class="author_email">info@csarven.ca</a></li>
+            <li id="author_email_2"><sup>@</sup><a href="mailto:lcd@ecs.soton.ac.uk" class="author_email">lcd@ecs.soton.ac.uk</a></li> 
+          </ul>
+        </div>
+
+        <div id="content" class="entry-content">
+          <div id="abstract">
+            <h2>Abstract</h2>
+            <p property="dcterms:abstract" class="entry-summary">This file is an example of the use of the css classes for the paper submission to the <a href="http://sociam.org/socm2015/">SOCM2015</a> workshop. It is meant to be straight-forward, please select "view source" for examples. It defines classes for a depth of 2 levels (section and subsection), figures, and tables. Please make use of links as much as possible, including internal references. Bibliographic references should be in ACM bib style - see an example in the <a href="#references">References</a> section.</p>
+          </div>
+
+          <div id="keywords">
+            <h2>Keywords</h2>
+            <ul>
+              <li><a href="http://en.wikipedia.org/wiki/Web_Science">Web Science</a></li>
+              <li><a href="http://en.wikipedia.org/wiki/Linked_Data">Linked Data</a></li>
+            </ul>
+          </div>
+
+          <h2 id="intro">Introduction</h2>
+          <div>
+            <p><a href="http://csarven.ca/#i">Sarven</a>, who's work I make a mishmash of here, has raised a <a href="http://csarven.ca/call-for-linked-research">call for linked research</a> which we attempt to respond to with the submission and publication process at the <a href="http://sociam.org/socm2015">3rd edition of the SOCM workshop</a>.</p>
+
+            <p>This template can be used with Sarven's <a href="http://linked-research.270a.info/acm.css">acm.css</a> and <a href="http://linked-research.270a.info/lncs.css">lncs.css</a> styles, to generate printable views similar to the respective formatting styles.</p>
+
+            <p>Use this page as a template for your submission. Please make use of links as much as possible, including internal references.</p>
+          </div>
+
+          <h2 id="sections">Sections</h2>
+          <div>
+            <p>Sections are defined with a <code>&lt;h2&gt;</code> tag containing the title of the section, and a <code>&lt;div&gt;</code>. The order in which the 2 tags appear is only important for the print views, as follows: the sections for which the <code>&lt;div&gt;</code> tag is first will not be numbered if the style requires numbering, e.g. the abstract, the keywords, the references, the acknowledgements; the sections for which the <code>&lt;h2&gt;</code> tag is first will be numbered if the style requires numbering</p>
+
+            <p>An optional <code>id</code> attribute can be used in the <code>&lt;h2&gt;</code> tag, as in internal reference to the section. The abstract, keywords, references, are all represented as sections. They should be included for the acm and lncs styles to work.</p>
+
+            <h3>Subsections</h3>
+            <div>
+              <p>Subsections are made just as sections, but with decreasing <code>h</code> tags: <code>&lt;h3&gt;</code>. <code>&lt;h4&gt;</code>, etc. Subsections can have <code>id</code> attributes as well.</p>
+            </div>
+
+            <h3 id="numbering">Numbering</h3>
+            <div>
+              <p><a href="#sections">Sections</a> and subsections should not be manually numbered. If they need to be referenced from text, an internal link should be set and used, making the numbering unneccessary. The print styles add automatic numbering to sections and subsections, so adding section numbers can lead to duble numbering when these styles are used. See the section on <a href="#sections">Sections</a> on how the numebring can be triggered.</p>
+              <p></p>
+            </div>
+          </div>
+
+          <h2 id="figs">Figures, tables, etc.</h2>
+          <div>
+            <p>Figures and tables should be given <code>id</code>s so that they are linkable. Figures and tables should have descriptive captions.</p>
+
+            <p>To create a captioned figure, use a <code>&lt;div class="figure"&gt;</code> tag containing the <code>&lt;img&gt;</code>, and the caption in a separate <code>&lt;p class="caption"&gt;</code> or <code>&lt;div class="caption"&gt;</code> tag. Images can be as big as needed, but they will be resized to a maximum width of 800px.</p>
+
+            <div class="figure" id="hatfig">
+              <img src="http://www.micahmakes.com/wp-content/uploads/2013/01/Crocheted-Scrappy-Hat.jpg" />
+              <div class="caption">Figure 1. Funky hat.</div>
+            </div>
+
+            <p>For tables use the available <code>&lt;caption&gt;</code> tag.</p>
+
+            <table id="loremipsum">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="nowrap">Column A</th>
+                  <th class="nowrap">Column B</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th class="nowrap">Row 1</th><td>(A, 1)</td><td class="left">Left aligned text.</td></tr>
+                <tr><th class="nowrap">Row 2</th><td>(A, 2)</td><td class="right">Right aligned text.</td></tr>
+                <tr><th class="nowrap">Row 3</th><td>(A, 2)</td><td>And some center aligned text that is slightly longer.</td></tr>
+              </tbody>
+              <caption>Table 1. 3 rows, 2 columns, with wrapping text.</caption>
+            </table>
+
+            <h3>Lists</h3>
+            <div>
+              <p>Lists can be numbered or unnumbered. These are basic HTML structured, there is no additional class defined for them. See below an example of each: </p>
+              
+              <p><div>A list of fruits:
+                <ol>
+                  <li>Strawberry</li>
+                  <li>Raspberry</li>
+                  <li>Tomato</li>
+                  <li>Cherry</li>
+                </ol>
+              </div></p>
+
+              <p><div>And a list of cereals:
+                <ul>
+                  <li>Wheat</li>
+                  <li>Oat</li>
+                  <li>Rye</li>
+                </ul>
+              </div></p>
+            </div>
+
+          </div>
+
+          <h2 id="related">Bibliography links</h2>
+          <div>
+            <p>The references should be added in a consistent style. For the SOCM workshop please use <a href="http://www.acm.org/publications/latex_style/">ACM citation style</a>. Please use links in the text where possible instead of references for any online resources. Published papers and articles should however be added in the <a href="#references">references</a> section and referenced like this [<a href="#r_1">1</a>].</p>
+          </div>
+
+          <h2 id="conclusion">Conclusion</h2>
+          <div>
+            <p>Please select "view source" on this page to see all the css classes being used. If you require more advanced style settings, please put them in a separate css file and include it in your submission. </p>
+          </div>
+
+          <div id="ack">
+            <h2>Acknowledgements</h2>
+            <p>Many thanks to <a href="http://csarven.ca/#i">Sarven</a> for the template I shamelessly stole and for the css styles shared with all.</p>
+          </div>
+
+          <div id="references">
+            <h2>References</h2>
+            <ol class="references">
+              <li id="r_1">Berners-Lee, T. 2006. Linked Data - Design Issues. <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a>. Accessed: 2014-10-31.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
